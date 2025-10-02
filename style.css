@@ -191,3 +191,252 @@ footer a {
     width: 80%;
   }
 }
+
+.button {
+  --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --edge-light: hsla(0, 0%, 50%, 0.6);
+  --text-light: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;
+  padding: 0.7em 1.2em;
+  border-radius: 0.5em;
+  min-height: 2.6em;
+  min-width: 3em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+
+  background: linear-gradient(
+    140deg,
+    #E50585 20%,
+    #ff3399 100%
+  );
+  color: #fff;
+  border: none;
+  box-shadow: inset 0.4px 1px 4px var(--edge-light);
+
+  transition: all 0.2s var(--bezier);
+}
+
+.button:hover {
+  text-shadow: 0px 0px 10px var(--text-light);
+  box-shadow: inset 0.4px 1px 6px var(--edge-light),
+              2px 4px 10px rgba(0,0,0,0.25);
+  transform: scale(1.08);
+}
+
+.button:active {
+  background: linear-gradient(
+    140deg,
+    #c90470 20%,
+    #e50585 100%
+  );
+  box-shadow: inset 0.4px 1px 8px var(--edge-light),
+              0px 0px 10px rgba(229,5,133,0.6);
+  transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Loader Animation */
+.loader {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 2rem;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.loader p {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+  height: 2rem;
+  margin-left: 8px;
+  text-align: start;
+  font-weight: bold;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 20%,
+    rgba(229, 5, 133, 0.1) 50%,
+    transparent 80%,
+    transparent 100%
+  );
+  z-index: 20;
+  pointer-events: none;
+}
+
+.word {
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  padding-left: 0;
+  color: #ffffff;
+  animation: spin_4991 4s infinite;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+/* Media Queries */
+@media(max-width: 1024px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-top {
+    flex-direction: row;
+  }
+  header .app-icon {
+    height: 2.5rem;
+  }
+}
+
+@media(max-width: 768px) {
+  header .header-top h1 {
+    font-size: 2.2rem;
+  }
+  header .header-text p {
+    font-size: 1rem;
+  }
+  #screenshots img {
+    width: 80%;
+  }
+  .loader {
+    font-size: 1rem;
+    height: 1.3rem;
+  }
+  .loader p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .words {
+    height: 1.3rem;
+  }
+  .word {
+    font-size: 1rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #c90470;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #c90470;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #c90470;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}

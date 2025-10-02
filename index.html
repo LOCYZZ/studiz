@@ -6,7 +6,12 @@
   <title>Studiz - Votre application de gestion étudiante</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
+  <style>
+    html {
+      scroll-behavior: smooth; /* Smooth scroll pour l'ancre */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,11 +21,32 @@
         <h1>Studiz</h1>
       </div>
       <div class="header-text">
-        <p>Organisez vos cours, vos devoirs et vos révisions avec une application intuitive et complète.</p>
-        <a href="#download" class="cta-btn">Télécharger l'application</a>
+        <div class="card">
+          <div class="loader">
+            <p>Organisez</p>
+            <div class="words">
+              <span class="word">votre planning</span>
+              <span class="word">votre messagerie</span>
+              <span class="word">vos devoirs</span>
+              <span class="word">vos notes</span>
+              <span class="word">votre planning</span>
+            </div>
+          </div>
+        </div>
+        <!-- Bouton modifié pour rediriger vers le bas -->
+        <a href="#download" class="cssbuttons-io-button">
+          Télécharger l'application
+          <div class="icon">
+            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+            </svg>
+          </div>
+        </a>
       </div>
     </div>
   </header>
+
   <section id="features">
     <h2>Fonctionnalités principales</h2>
     <div class="features">
@@ -36,36 +62,40 @@
       </div>
       <div class="feature-card">
         <img src="https://img.icons8.com/fluency/96/checklist.png" alt="Tâches">
-        <h3>Messagerie</h3>
-        <p>Soyez averti simplement d'un message sur la boîte mail.</p>
+        <h3>Gestion des devoirs</h3>
+        <p>Planifiez et suivez tous vos devoirs et projets facilement.</p>
       </div>
       <div class="feature-card">
         <img src="https://img.icons8.com/fluency/96/note.png" alt="Agenda">
-        <h3>Gestion des devoirs</h3>
+        <h3>Agenda</h3>
         <p>Organisez vos devoirs et échéances dans un agenda intuitif.</p>
       </div>
     </div>
   </section>
+
   <section id="screenshots">
     <h2>Aperçu de l'application</h2>
     <div class="screenshots">
-      <img src="screen2.jpg" alt="Écran 1 de l'application">
-      <img src="screen1.jpg" alt="Écran 2 de l'application">
-      <img src="screen3.jpg" alt="Écran 3 de l'application">
+      <img src="scr2.png" alt="Écran 1 de l'application">
+      <img src="scr2.png" alt="Écran 2 de l'application">
+      <img src="scr3.png" alt="Écran 3 de l'application">
     </div>
   </section>
+
   <section id="download">
     <h2>Téléchargez Studiz dès maintenant</h2>
     <p style="text-align:center; margin-bottom: 30px;">Disponible sur Android uniquement</p>
     <div style="text-align:center;">
-      <a href="https://umbox.univ-lemans.fr/index.php/s/MY59W2Lb7xYj5kN" class="cta-btn download-btn">Download Apk <span class="arrow">→</span></a>
+      <a href="https://umbox.univ-lemans.fr/index.php/s/MY59W2Lb7xYj5kN" class="button" target="_blank">
+        <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path>
+        </svg> Download Apk
+      </a>
     </div>
   </section>
+
   <footer>
     <p>&copy; 2025 Studiz. Développé par Evan / Locyzz. <a href="https://locyzz.github.io/yt/">Contact</a></p>
   </footer>
 </body>
 </html>
-
-
-
