@@ -1,106 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studiz - Votre application de gestion étudiante</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
-  <style>
-    html {
-      scroll-behavior: smooth; /* Smooth scroll pour l'ancre */
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studiz - L'application ultime pour les étudiants</title>
+  <link rel="icon" type="image/png" href="pp.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <div class="header-content">
-      <div class="header-top">
-        <img src="icon.png" alt="Studiz Logo" class="app-icon">
-        <h1>Studiz</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="icon.png" alt="Studiz Logo" class="logo" />
+      <span class="logo-text">Studiz</span>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="#features">Fonctionnalités</a>
+      <a href="#team">Notre Équipe</a>
+      <a href="#screenshots">Aperçu</a>
+      <a href="#download" class="btn-nav">Télécharger</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" style="padding-top: 60px;"> <!-- 🔼 remonté -->
+    <div class="hero-content">
+      <h1>
+        L’application ultime pour 
+        <span class="text-gradient pink">tes cours</span>, 
+        <span class="text-gradient purple">tes tâches</span> 
+        et <span class="text-gradient blue">tes résultats</span>
+      </h1>
+      <p>
+        Studiz est ton assistant étudiant moderne, simple et rapide.<br>
+        Suis ton année, organise tes devoirs et visualise ta réussite !
+      </p>
+
+      <div class="buttons">
+        <a href="#download" class="btn-primary">📲 Télécharger l’app</a>
+        <a href="#features" class="btn-secondary">En savoir plus</a>
       </div>
-      <div class="header-text">
-        <div class="card">
-          <div class="loader">
-            <p>Organisez</p>
-            <div class="words">
-              <span class="word">votre planning</span>
-              <span class="word">votre messagerie</span>
-              <span class="word">vos devoirs</span>
-              <span class="word">vos notes</span>
-              <span class="word">votre planning</span>
-            </div>
-          </div>
+
+      <div class="ratings">
+        <div>
+          <h2>⭐ 4,1</h2>
+          <p>Note moyenne</p>
         </div>
-        <!-- Bouton modifié pour rediriger vers le bas -->
-        <a href="#download" class="cssbuttons-io-button">
-          Télécharger l'application
-          <div class="icon">
-            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-            </svg>
-          </div>
-        </a>
+        <div>
+          <h2>🐭 +40</h2>
+          <p>Utilisateurs actifs</p>
+        </div>
       </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="scr1.png" alt="Aperçu de l'application Studiz" />
     </div>
   </header>
 
+  <!-- FEATURES -->
   <section id="features">
     <h2>Fonctionnalités principales</h2>
-    <div class="features">
-      <div class="feature-card">
-        <img src="https://img.icons8.com/fluency/96/calendar.png" alt="Calendrier">
-        <h3>Calendrier interactif</h3>
-        <p>Visualisez vos cours et événements importants facilement.</p>
+    <div class="features-grid fade-in">
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/calendar.png" alt="">
+        <h3>Calendrier intelligent</h3>
+        <p>Organise tes cours et événements automatiquement.</p>
       </div>
-      <div class="feature-card">
-        <img src="https://img.icons8.com/fluency/96/math.png" alt="Moyenne">
-        <h3>Calcul de la moyenne</h3>
-        <p>Suivez vos notes et calculez automatiquement vos moyennes.</p>
+
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/math.png" alt="">
+        <h3>Enregistre tes notes</h3>
+        <p>Garde toutes tes notes au même endroit simplement.</p>
       </div>
-      <div class="feature-card">
-        <img src="https://img.icons8.com/fluency/96/checklist.png" alt="Tâches">
+
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/checklist.png" alt="">
         <h3>Gestion des devoirs</h3>
-        <p>Planifiez et suivez tous vos devoirs et projets facilement.</p>
+        <p>Ajoute, classe et suis tes tâches facilement.</p>
       </div>
-      <div class="feature-card">
-        <img src="https://img.icons8.com/fluency/96/note.png" alt="Agenda">
-        <h3>Agenda</h3>
-        <p>Organisez vos devoirs et échéances dans un agenda intuitif.</p>
+
+      <div class="feature">
+        <img src="https://img.icons8.com/fluency/96/note.png" alt="">
+        <h3>Infos importantes</h3>
+        <p>Sois au courant des dernières infos importantes rapidement.</p>
       </div>
     </div>
   </section>
 
+  <!-- TEAM -->
+  <section id="team">
+    <h2>Notre Équipe</h2>
+    <div class="team-grid fade-in">
+      <div class="team-member">
+        <img src="profil_evan.png" alt="Photo membre 1" />
+        <h3><a href="https://locyzz.github.io/yt/" target="_blank">Locyzz / Evan</a></h3>
+        <p class="role">Développeur principal</p>
+        <p>Créateur de Studiz et passionné par la simplification de la vie étudiante.</p>
+      </div>
+
+      <div class="team-member">
+        <img src="profil_marine.png" alt="Photo membre 2" />
+        <h3><a href="https://www.instagram.com/marine_44130?igsh=anVoaXhyZ2s2bjE2">Marine</a></h3>
+        <p class="role">Designer graphique</p>
+        <p>Responsable du design, du logo et de la mascotte de l’application.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
   <section id="screenshots">
     <h2>Aperçu de l'application</h2>
-    <div class="screenshots">
-      <img src="scr2.png" alt="Écran 1 de l'application">
-      <img src="scr2.png" alt="Écran 2 de l'application">
-      <img src="scr3.png" alt="Écran 3 de l'application">
+    <div class="screens fade-in">
+      <img src="scr2.png" alt="">
+      <img src="scr1.png" alt="">
+      <img src="scr3.png" alt="">
     </div>
   </section>
 
+  <!-- DOWNLOAD -->
   <section id="download">
     <h2>Téléchargez Studiz dès maintenant</h2>
-    <p style="text-align:center; margin-bottom: 30px;">Disponible sur Android uniquement (Nouvelle version v5.1 - 20/10/25)</p>
-    <div style="text-align:center;">
-      <a href="https://umbox.univ-lemans.fr/index.php/s/pHbQGQETYqsEwZ3" class="button" target="_blank">
-        <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path>
-        </svg> Download Apk
+    <p>Disponible sur Android — Version 6.0 (27/10/25)</p>
+    <div class="download-btn-wrapper">
+      <a href="https://umbox.univ-lemans.fr/index.php/s/pZ6FKkjNLnsxisM" class="btn-primary large" target="_blank">
+        🐭 Télécharger APK
       </a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Studiz. Développé par Evan / Locyzz. <a href="https://locyzz.github.io/yt/">Contact</a></p>
-    <p>&copy; Dessin et Logo Studiz by Marine. <a href="a definir">Contact</a></p>
+    <p>&copy; 2025 Studiz — Fait avec 💖 par l'équipe Studiz</p>
+    <p>
+      <a href="https://www.instagram.com/studizapp?igsh=MXZmaXpkN3NvNW54cw==" target="_blank" style="color:white; text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-top:10px;">
+        <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Studiz" style="width:24px; height:24px;">
+        Suis-nous sur Instagram
+      </a>
+    </p>
   </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Responsive menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
-
-
-
-
