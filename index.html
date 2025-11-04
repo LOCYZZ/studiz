@@ -119,7 +119,7 @@
     <div class="team-grid fade-in">
       <div class="team-member">
         <img src="profil_evan.png" alt="Photo membre 1" />
-        <h3><a href="https://locyzz.fr/" target="_blank">Locyzz / Evan</a></h3>
+        <h3><a href="https://locyzz.github.io/yt/" target="_blank">Locyzz / Evan</a></h3>
         <p class="role">Développeur principal</p>
         <p>Créateur de Studiz et passionné par la simplification de la vie étudiante.</p>
       </div>
@@ -146,44 +146,80 @@
   <!-- DOWNLOAD -->
   <section id="download">
     <h2>Téléchargez Studiz dès maintenant</h2>
-    <p>Disponible sur Android — Version 6.1 (27/10/25)</p>
+    <p>Disponible sur Android — Version 7 (04/11/25)</p>
     <div class="download-btn-wrapper">
-      <a href="https://umbox.univ-lemans.fr/index.php/s/GR9JQmGScGQcwNj" class="btn-primary large" target="_blank">
+      <a href="https://umbox.univ-lemans.fr/index.php/s/PmBc4ok2Q5XzpTT" class="btn-primary large" target="_blank">
         🐭 Télécharger APK
       </a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>2025 Studiz — Fait avec 💖 par l'équipe Studiz</p>
+<footer>
+  <p>2025 Studiz — Fait avec 💖 par l'équipe Studiz</p>
+  <p>
+    <a href="https://www.instagram.com/studizapp?igsh=MXZmaXpkN3NvNW54cw==" target="_blank" style="color:white; text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-top:10px;">
+      <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Studiz" style="width:24px; height:24px;">
+      Suis-nous sur Instagram
+    </a>
+  </p>
+  <p style="margin-top:5px;">
+    <a href="#" id="terms-link" style="color:white; text-decoration:underline;">Conditions d’utilisation</a>
+  </p>
+</footer>
+
+<!-- POPUP CONDITIONS -->
+<div id="terms-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Conditions d’utilisation</h2>
     <p>
-      <a href="https://www.instagram.com/studizapp?igsh=MXZmaXpkN3NvNW54cw==" target="_blank" style="color:white; text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-top:10px;">
-        <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Studiz" style="width:24px; height:24px;">
-        Suis-nous sur Instagram
-      </a>
+      Studiz est une application d’aide à l’organisation étudiante.  
+      Bien que nous fassions tout notre possible pour garantir la fiabilité des informations affichées,  
+      <strong>l’utilisateur ne doit pas reposer toute sa confiance sur l’application.</strong><br><br>
+      Nous recommandons de toujours <strong>vérifier les données sur les sites officiels</strong> 
+      (universités, plateformes d’examen, etc.).  
+      L’équipe Studiz ne peut être tenue responsable des choix, décisions ou conséquences 
+      résultant de l’utilisation de l’application.
     </p>
-  </footer>
+  </div>
+</div>
 
-  <!-- SCRIPT -->
-  <script>
-    // Fade-in animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
+<!-- SCRIPT -->
+<script>
+  // Fade-in animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Responsive menu toggle
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('nav-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      toggle.classList.toggle('open');
-    });
-  </script>
-</body>
-</html>
+  // Responsive menu toggle
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    toggle.classList.toggle('open');
+  });
 
+  // Popup conditions d'utilisation
+  const termsLink = document.getElementById('terms-link');
+  const popup = document.getElementById('terms-popup');
+  const closeBtn = document.querySelector('.close-btn');
 
+  termsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.style.display = 'flex';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
