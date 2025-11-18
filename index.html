@@ -265,51 +265,63 @@
   </div>
 
   <!-- POPUP POLITIQUE DE CONFIDENTIALITÉ -->
-  <div id="privacy-popup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn">&times;</span>
-      <h2>Politique de confidentialité</h2>
-      <p>
-        <strong>1. Données collectées</strong><br>
-        Studiz est conçu comme un outil d’organisation pour étudiants.  
-        Les informations que vous saisissez dans l’application (par exemple : matières, devoirs, notes, 
-        informations de cours) restent associées à votre compte/appareil.<br><br>
+<div id="privacy-popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Politique de confidentialité</h2>
+    <p>
+      <strong>1. Données traitées dans l’application</strong><br>
+      Studiz est conçu comme un outil d’organisation pour étudiants.  
+      Les informations que vous saisissez dans l’application (par exemple : matières, classes, devoirs, notes, informations de cours)
+      sont enregistrées <strong>localement sur votre appareil</strong> afin de vous permettre de gérer votre planning et votre année scolaire.<br>
+      Ces données ne sont pas envoyées à l’éditeur de l’application ni à un serveur Studiz.<br><br>
 
-        L’application ne collecte pas de données personnelles sans votre action volontaire 
-        (par exemple, si vous nous contactez par e-mail).<br><br>
+      <strong>2. Import d’emplois du temps via des liens .ics</strong><br>
+      Studiz permet d’enregistrer des liens de type <code>.ics</code> (calendriers externes, par exemple ceux fournis par une université).  
+      Lorsque vous ajoutez ces liens dans les paramètres, ils sont enregistrés sur votre appareil.<br><br>
 
-        <strong>2. Finalité des données</strong><br>
-        Les données sont utilisées uniquement pour :<br>
-        – Afficher et gérer vos cours, devoirs et résultats ;<br>
-        – Améliorer l’ergonomie et le fonctionnement de l’application (statistiques anonymisées le cas échéant) ;<br>
-        – Répondre à vos demandes lorsque vous nous contactez.<br><br>
+      À l’ouverture de l’application, Studiz peut <strong>interroger automatiquement ces liens .ics</strong> afin de récupérer et mettre à jour votre planning.<br>
+      Concrètement, cela signifie que des requêtes sont envoyées aux serveurs qui hébergent ces emplois du temps (par exemple, les serveurs de votre établissement).<br><br>
 
-        <strong>3. Stockage et durée de conservation</strong><br>
-        Les données saisies dans l’application sont principalement stockées localement sur votre appareil.  
-        Si, à l’avenir, des fonctionnalités en ligne (sauvegarde cloud, synchronisation, etc.) sont ajoutées,  
-        des informations claires et spécifiques vous seront présentées et votre consentement sera demandé.<br><br>
+      Studiz ne fait pas transiter ces requêtes par un serveur propre à l’éditeur :<br>
+      – les appels sont faits directement entre votre appareil et le serveur de l’emploi du temps ;<br>
+      – l’éditeur de Studiz n’a pas accès au contenu des fichiers .ics téléchargés ;<br>
+      – les informations contenues dans ces fichiers (cours, codes de matières, salles, etc.) sont gérées localement dans l’application.<br><br>
 
-        <strong>4. Partage des données</strong><br>
-        Vos données ne sont ni revendues ni utilisées à des fins publicitaires.  
-        Elles ne sont partagées avec des tiers que si cela est nécessaire au fonctionnement du service 
-        (par exemple, un prestataire d’hébergement) et dans le respect de la réglementation en vigueur.<br><br>
+      Comme pour toute connexion Internet, les serveurs qui fournissent ces fichiers .ics peuvent recevoir certaines informations techniques 
+      (telles que votre adresse IP ou les en-têtes de requête), comme pour toute navigation classique sur le web.<br><br>
 
-        <strong>5. Vos droits</strong><br>
-        Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée,  
-        vous disposez des droits suivants : accès, rectification, suppression, limitation, opposition,  
-        et portabilité de vos données lorsque cela est applicable.<br><br>
+      <strong>3. Absence de collecte et de suivi par l’éditeur</strong><br>
+      L’éditeur de Studiz ne met en place :<br>
+      – aucun système de compte ou d’inscription ;<br>
+      – aucune synchronisation cloud gérée par Studiz ;<br>
+      – aucun suivi publicitaire ou analytique (pas de tracking, cookies ou traceurs intégrés) ;<br>
+      – aucun stockage de vos données sur un serveur contrôlé par Studiz.<br><br>
 
-        Vous pouvez exercer vos droits ou poser toute question relative à vos données à l’adresse suivante :  
-        <a href="mailto:studiz.fun@gmail.com">studiz.fun@gmail.com</a>.<br><br>
+      Toutes les informations que vous consultez et modifiez dans l’application (y compris celles provenant des fichiers .ics)
+      restent gérées sur votre appareil.<br><br>
 
-        <strong>6. Mise à jour de cette politique</strong><br>
-        Cette politique de confidentialité pourra être mise à jour en fonction de l’évolution de l’application 
-        ou de la réglementation. La date de mise à jour sera indiquée dans cette section.<br><br>
+      <strong>4. Vos droits</strong><br>
+      En règle générale, les données que vous saisissez dans Studiz sont sous votre contrôle direct et restent sur votre téléphone.
+      La suppression de l’application entraîne la suppression des données stockées localement.<br><br>
 
-        Dernière mise à jour : 18/11/2025.
-      </p>
-    </div>
+      Si les liens .ics utilisés proviennent d’un établissement (ex. université), les droits relatifs à ces données 
+      (accès, rectification, etc.) doivent être exercés auprès de cet établissement, qui en reste le responsable.<br><br>
+
+      Pour toute question concernant l’utilisation de vos données dans l’application Studiz, vous pouvez néanmoins nous contacter à :  
+      <a href="mailto:studiz.fun@gmail.com">studiz.fun@gmail.com</a>.<br><br>
+
+      <strong>5. Mise à jour</strong><br>
+      Cette politique pourra évoluer si de nouvelles fonctionnalités nécessitent un traitement différent de vos données 
+      (par exemple, une future synchronisation en ligne ou un compte utilisateur).  
+      Dans ce cas, des informations claires vous seront présentées et, le cas échéant, votre consentement sera demandé.<br><br>
+
+      Dernière mise à jour : 19/11/2025.
+    </p>
   </div>
+</div>
+
+
 
   <!-- SCRIPT -->
   <script>
