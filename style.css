@@ -344,7 +344,10 @@ footer {
   text-align: left;
   animation: pop-in 0.3s ease;
   position: relative;
+  max-height: 80vh;        /* Empêche de dépasser l'écran */
+  overflow-y: auto;        /* Active le scroll si nécessaire */
 }
+
 
 .popup-content h2 {
   color: #e50585;
@@ -375,4 +378,55 @@ footer {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+
+/* FEEDBACK FORM */
+#feedback {
+  text-align: center;
+  padding: 80px 8%;
+}
+
+#feedback p {
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+}
+
+.form-wrapper iframe {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .form-wrapper iframe {
+    height: 700px;
+  }
+}
+
+
+#toggle-form {
+  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+
+#feedback {
+  padding-bottom: 0px !important;   /* Réduit l'espace bas */
+}
+
+#feedback .form-wrapper {
+  margin-bottom: 0; /* Supprime l’espace inutile */
 }

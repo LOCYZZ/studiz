@@ -4,26 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studiz - L'application ultime pour les étudiants</title>
-  <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="icon" type="image/png" href="pp.png" />
+  <link rel="shortcut icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Studiz" />
-    <meta name="description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Studiz" />
+  <meta name="description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Studiz" />
-    <meta property="og:description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
-    <meta property="og:image" content="https://i.ibb.co/ZpysZ2gQ/Studiz.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Studiz" />
+  <meta property="og:description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
+  <meta property="og:image" content="https://i.ibb.co/ZpysZ2gQ/Studiz.png" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Studiz" />
-    <meta property="twitter:description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
-    <meta property="twitter:image" content="https://i.ibb.co/ZpysZ2gQ/Studiz.png" />
-<meta hid="og:image" property="og:image" content="favicon.ico">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Studiz" />
+  <meta property="twitter:description" content="Votre assistant étudiant moderne — suivez vos cours, devoirs et réussites en un seul endroit." />
+  <meta property="twitter:image" content="https://i.ibb.co/ZpysZ2gQ/Studiz.png" />
 </head>
 
 <body>
@@ -44,12 +44,13 @@
       <a href="#features">Fonctionnalités</a>
       <a href="#team">Notre Équipe</a>
       <a href="#screenshots">Aperçu</a>
+      <a href="#feedback">Avis / Retour</a>
       <a href="#download" class="btn-nav">Télécharger</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero" style="padding-top: 60px;"> <!-- 🔼 remonté -->
+  <header class="hero" style="padding-top: 60px;">
     <div class="hero-content">
       <h1>
         L’application ultime pour 
@@ -120,7 +121,7 @@
     <div class="team-grid fade-in">
       <div class="team-member">
         <img src="profil_evan.png" alt="Photo membre 1" />
-        <h3><a href="https://locyzz.github.io/yt/" target="_blank">Locyzz / Evan</a></h3>
+        <h3><a href="https://locyzz.fr/" target="_blank">Locyzz / Evan</a></h3>
         <p class="role">Développeur principal</p>
         <p>Créateur de Studiz et passionné par la simplification de la vie étudiante.</p>
       </div>
@@ -144,6 +145,37 @@
     </div>
   </section>
 
+  <!-- FEEDBACK -->
+<section id="feedback">
+  <h2>Donne ton avis ou signale un problème</h2>
+  <p>Ton retour nous aide à améliorer Studiz pour tous les étudiants 🐭</p>
+
+  <button id="toggle-form" class="btn-secondary" style="margin-bottom:10px;">
+    📩 Ouvrir le formulaire
+  </button>
+
+  <!-- 🔽 LIGNE AJOUTÉE -->
+  <p style="margin-bottom:25px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSekv_NqDPkGzAgGNL9A16KrQ8tg4362csbHbg00p81N3AnONA/viewform"
+       target="_blank"
+       style="color:#e50585; text-decoration:underline; font-size:0.95rem;">
+      Ouvrir le formulaire dans une autre page
+    </a>
+  </p>
+
+  <div class="form-wrapper" id="feedback-form" style="display:none;">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSekv_NqDPkGzAgGNL9A16KrQ8tg4362csbHbg00p81N3AnONA/viewform?embedded=true" 
+      width="100%" 
+      height="900" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Chargement…
+    </iframe>
+  </div>
+</section>
+
   <!-- DOWNLOAD -->
   <section id="download">
     <h2>Téléchargez Studiz dès maintenant</h2>
@@ -156,71 +188,192 @@
   </section>
 
   <!-- FOOTER -->
-<footer>
-  <p>2025 Studiz — Fait avec 💖 par l'équipe Studiz</p>
-  <p>
-    <a href="https://www.instagram.com/studizapp?igsh=MXZmaXpkN3NvNW54cw==" target="_blank" style="color:white; text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-top:10px;">
-      <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Studiz" style="width:24px; height:24px;">
-      Suis-nous sur Instagram
-    </a>
-  </p>
-  <p style="margin-top:5px;">
-    <a href="#" id="terms-link" style="color:white; text-decoration:underline;">Conditions d’utilisation</a>
-  </p>
-</footer>
-
-<!-- POPUP CONDITIONS -->
-<div id="terms-popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn">&times;</span>
-    <h2>Conditions d’utilisation</h2>
+  <footer>
     <p>
-      Studiz est une application d’aide à l’organisation étudiante.  
-      Bien que nous fassions tout notre possible pour garantir la fiabilité des informations affichées,  
-      <strong>l’utilisateur ne doit pas reposer toute sa confiance sur l’application.</strong><br><br>
-      Nous recommandons de toujours <strong>vérifier les données sur les sites officiels</strong> 
-      (universités, plateformes d’examen, etc.).  
-      L’équipe Studiz ne peut être tenue responsable des choix, décisions ou conséquences 
-      résultant de l’utilisation de l’application.
+      <a href="https://www.instagram.com/studizapp?igsh=MXZmaXpkN3NvNW54cw==" target="_blank" style="color:white; text-decoration:none; display:inline-flex; align-items:center; gap:8px; margin-top:10px;">
+        <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Studiz" style="width:24px; height:24px;">
+        Suis-nous sur Instagram
+      </a>
     </p>
+
+    <p style="margin-top:5px;">
+      <a href="#" data-popup-target="terms-popup" style="color:white; text-decoration:underline; margin:0 6px;">
+        Conditions d’utilisation
+      </a>
+      •
+      <a href="#" data-popup-target="mentions-popup" style="color:white; text-decoration:underline; margin:0 6px;">
+        Mentions légales
+      </a>
+      •
+      <a href="#" data-popup-target="privacy-popup" style="color:white; text-decoration:underline; margin:0 6px;">
+        Politique de confidentialité
+      </a>
+    </p>
+
+    <br>
+    <p>2025 Studiz — Fait avec 💖 par l'équipe Studiz</p>
+  </footer>
+
+  <!-- POPUP CONDITIONS -->
+  <div id="terms-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Conditions d’utilisation</h2>
+      <p>
+        Studiz est une application d’aide à l’organisation étudiante.  
+        Bien que nous fassions tout notre possible pour garantir la fiabilité des informations affichées,  
+        <strong>l’utilisateur ne doit pas reposer toute sa confiance sur l’application.</strong><br><br>
+        Nous recommandons de toujours <strong>vérifier les données sur les sites officiels</strong> 
+        (universités, plateformes d’examen, etc.).  
+        L’équipe Studiz ne peut être tenue responsable des choix, décisions ou conséquences 
+        résultant de l’utilisation de l’application.
+      </p>
+    </div>
   </div>
-</div>
 
-<!-- SCRIPT -->
-<script>
-  // Fade-in animation
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
+  <!-- POPUP MENTIONS LÉGALES -->
+  <div id="mentions-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Mentions légales</h2>
+      <p>
+        <strong>Éditeur de l’application</strong><br>
+        Studiz, application d’organisation pour étudiants.<br>
+        Responsable de publication : Evan<br>
+        Contact : <a href="mailto:studiz.fun@gmail.com">studiz.fun@gmail.com</a><br><br>
+
+        <strong>Nature du service</strong><br>
+        Studiz est une application permettant de suivre ses cours, devoirs et résultats.  
+        L’application est proposée à titre d’outil d’aide à l’organisation et n’a pas de valeur contractuelle 
+        vis-à-vis des établissements d’enseignement ou des organismes officiels.<br><br>
+
+        <strong>Propriété intellectuelle</strong><br>
+        L’ensemble des éléments graphiques, logo, identité visuelle, textes et captures d’écran de Studiz 
+        sont la propriété de l’équipe Studiz, sauf mention contraire.  
+        Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable, 
+        est interdite.<br><br>
+
+        <strong>Responsabilité</strong><br>
+        L’éditeur ne peut être tenu responsable des dommages directs ou indirects résultant de l’utilisation 
+        de l’application ou de l’impossibilité d’y accéder, quelles qu’en soient les causes.<br><br>
+
+        <strong>Contact</strong><br>
+        Pour toute question liée à l’application ou à son utilisation, vous pouvez écrire à :  
+        <a href="mailto:studiz.fun@gmail.com">studiz.fun@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- POPUP POLITIQUE DE CONFIDENTIALITÉ -->
+  <div id="privacy-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Politique de confidentialité</h2>
+      <p>
+        <strong>1. Données collectées</strong><br>
+        Studiz est conçu comme un outil d’organisation pour étudiants.  
+        Les informations que vous saisissez dans l’application (par exemple : matières, devoirs, notes, 
+        informations de cours) restent associées à votre compte/appareil.<br><br>
+
+        L’application ne collecte pas de données personnelles sans votre action volontaire 
+        (par exemple, si vous nous contactez par e-mail).<br><br>
+
+        <strong>2. Finalité des données</strong><br>
+        Les données sont utilisées uniquement pour :<br>
+        – Afficher et gérer vos cours, devoirs et résultats ;<br>
+        – Améliorer l’ergonomie et le fonctionnement de l’application (statistiques anonymisées le cas échéant) ;<br>
+        – Répondre à vos demandes lorsque vous nous contactez.<br><br>
+
+        <strong>3. Stockage et durée de conservation</strong><br>
+        Les données saisies dans l’application sont principalement stockées localement sur votre appareil.  
+        Si, à l’avenir, des fonctionnalités en ligne (sauvegarde cloud, synchronisation, etc.) sont ajoutées,  
+        des informations claires et spécifiques vous seront présentées et votre consentement sera demandé.<br><br>
+
+        <strong>4. Partage des données</strong><br>
+        Vos données ne sont ni revendues ni utilisées à des fins publicitaires.  
+        Elles ne sont partagées avec des tiers que si cela est nécessaire au fonctionnement du service 
+        (par exemple, un prestataire d’hébergement) et dans le respect de la réglementation en vigueur.<br><br>
+
+        <strong>5. Vos droits</strong><br>
+        Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi Informatique et Libertés modifiée,  
+        vous disposez des droits suivants : accès, rectification, suppression, limitation, opposition,  
+        et portabilité de vos données lorsque cela est applicable.<br><br>
+
+        Vous pouvez exercer vos droits ou poser toute question relative à vos données à l’adresse suivante :  
+        <a href="mailto:studiz.fun@gmail.com">studiz.fun@gmail.com</a>.<br><br>
+
+        <strong>6. Mise à jour de cette politique</strong><br>
+        Cette politique de confidentialité pourra être mise à jour en fonction de l’évolution de l’application 
+        ou de la réglementation. La date de mise à jour sera indiquée dans cette section.<br><br>
+
+        Dernière mise à jour : 18/11/2025.
+      </p>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    // Fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
     });
-  });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Responsive menu toggle
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('nav-menu');
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    toggle.classList.toggle('open');
-  });
+    // Responsive menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
 
-  // Popup conditions d'utilisation
-  const termsLink = document.getElementById('terms-link');
-  const popup = document.getElementById('terms-popup');
-  const closeBtn = document.querySelector('.close-btn');
+    // Popups (Conditions d'utilisation, Mentions légales, Politique de confidentialité)
+    const popupLinks = document.querySelectorAll('[data-popup-target]');
+    const popups = document.querySelectorAll('.popup');
+    const closeButtons = document.querySelectorAll('.popup .close-btn');
 
-  termsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    popup.style.display = 'flex';
-  });
+    // Ouverture des popups
+    popupLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-popup-target');
+        const targetPopup = document.getElementById(targetId);
+        if (targetPopup) {
+          targetPopup.style.display = 'flex';
+        }
+      });
+    });
 
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-  });
+    // Fermeture via bouton ×
+    closeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parentPopup = btn.closest('.popup');
+        if (parentPopup) {
+          parentPopup.style.display = 'none';
+        }
+      });
+    });
 
-  window.addEventListener('click', (e) => {
-    if (e.target === popup) {
-      popup.style.display = 'none';
-    }
-  });
-</script>
+    // Fermeture en cliquant en dehors du contenu
+    window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('popup')) {
+        e.target.style.display = 'none';
+      }
+    });
+
+    // Toggle affichage formulaire
+const toggleFormBtn = document.getElementById('toggle-form');
+const feedbackForm = document.getElementById('feedback-form');
+
+toggleFormBtn.addEventListener('click', () => {
+  const isVisible = feedbackForm.style.display === 'block';
+
+  feedbackForm.style.display = isVisible ? 'none' : 'block';
+  toggleFormBtn.textContent = isVisible ? "📩 Ouvrir le formulaire" : "❌ Fermer le formulaire";
+});
+
+  </script>
+</body>
+</html>
